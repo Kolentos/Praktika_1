@@ -1,0 +1,892 @@
+@font-face {
+  font-family: "TTLakes";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/TTLakes-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TTLakes";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/TTLakes-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TTLakes";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/TTLakes-Bold.woff") format("woff");
+}
+
+@media screen and (max-width: 321px) and (orientation: portrait)  {
+    body {
+        width: 320px;
+        height: 597px ;
+        margin: 0px;
+        font-family: "TTLakes", system-ui, sans-serif;
+        overflow-x: hidden; /* отключает горизонтальный скролл */
+        overflow-y: scroll; /* включает вертикальный скролл */
+        
+    }
+  
+    .header {
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         width: 320px; 
+         height: 88px; 
+         background-color: #ffffff;
+    }
+
+
+
+
+    .header__block {
+         display: flex;
+         align-items: center;
+         width: auto; 
+         height: 88px; 
+         background-color: #ffffff;
+         gap:16px;
+    }
+
+    .header__block_left {
+        margin-left: 16px;
+    }
+
+    .header__block_right {
+        margin-right: 16px;
+    }
+
+    main {
+        width: 320px;
+        height: 509px;
+        background-color: #F8F8F8;
+    }
+
+    header img {
+         max-width: 100%;
+         max-height: 100%;
+         height: auto;
+    }
+
+ /*------------------------------------------------------------------*/
+
+
+
+    .header__icon {
+         display: flex;
+         justify-content: center;
+         align-items: center; 
+         width: 40px;
+         height: 40px; 
+         background-color: #FF3E79;
+         border-radius: 20px;
+         border: none;
+        padding: 0;
+    }
+
+    .header__icon_burger_menu {
+         display: flex;
+    }
+
+    .header__icon_remont {
+         display: flex;
+    }
+
+    .header__icon_search {
+         display: flex;
+    }
+
+    .header__icon_phone {
+         display: none;
+    }
+
+    .header__icon_messege {
+         display: none;
+    }
+
+    .header__icon_persone {
+         display: none;
+    }
+
+    .header__line_type_first {
+         display: none;
+    }
+
+    .header__line_type_second {
+        display: flex;
+    }
+
+    .header__logo {
+        width: 96px;
+        height: 50px;
+    }
+/*------------------------------------------------------------------*/
+    .title__text {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+    }
+
+    .title p {
+        font-family: "TTLakes", sans-serif;
+        font-weight: Bold;
+        font-size: 28px;
+    }
+
+    .title__text {
+        display: flex;
+        align-items: center;
+    }
+
+    .title__icon {
+        display: none;
+    }
+
+
+ /*------------------------------------------------------------------*/
+    .scroll{
+        display: flex;
+         width: 320px;
+         height: 40px; 
+        /* горизонтальный скролл при переполнении */
+         overflow-x: auto; 
+         overflow-y: hidden; 
+         white-space: nowrap; 
+         scrollbar-width: none;/* вертикальный не нужен */
+           /* не переносить текст */
+         
+    }
+
+    .scroll > * {
+        flex-shrink: 0;
+    }
+
+
+
+  /*.scroll{
+        display: flex;
+         width: auto;
+         height: auto;
+         overflow-x: auto; 
+         overflow-y: hidden; 
+         scrollbar-width: none;  
+         white-space: nowrap;  */
+
+
+
+    
+    .scroll__button {
+         width: auto; 
+         min-width: 100px;
+         height:40px; 
+         font-family: "TTLakes", sans-serif;
+         font-weight: 500;
+         font-size: 16px;
+         color: #7e7e82;;
+         overflow: hidden;
+         padding-left: 5%;
+         padding-right: 5%;
+    }
+    .scroll__button__active {
+         border: 2px solid #b8ffec; 
+         border-radius: 6px;
+    }
+
+    .scroll__button__passive {
+        border: 0px;
+        border-radius: 6px;
+        background-color: #F8F8F8;
+    }
+
+    .scroll__button__brend {
+        display: none;
+    }
+    .scroll__button__active__device{
+        display:block;
+    }
+
+    .scroll__button__passive__device{
+        display: none;
+    }
+
+    .scroll__button__service{
+        display: block;
+        
+    }
+    .scroll__button__address{
+        display: none;
+    }
+    .scroll__button__price{
+        display: block;
+    }
+    .scroll__button__device{
+        display: none;
+    }
+/*---------------
+/*------------------------------------------------------------------*/
+    .second_block {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height: 208px;
+        padding-top: 16px;
+    }   
+
+    .second_block p {
+        font-size: 14px;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+    }
+
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+
+
+    .text__picture {
+        display: flex;
+        width: 320px;
+        height: 176px;
+    }
+
+    .text__dlc__m {
+        display:none;
+    }
+
+    .text__dlc__l {
+        display:none;
+    }
+    
+    .text__br {
+        display:none;
+    }
+
+
+
+ /*------------------------------------------------------------------*/
+
+
+   .text__read {
+    display: flex;
+    width: 135px;
+    height: 24px;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+
+   }
+
+   .text__read {
+    font-size: 16px;
+    font-family: "TTLakes", sans-serif;
+    font-weight: Bold;
+   }
+
+   .text__read_icon {
+        display: flex;
+         width: 24px;
+         height: 24px;
+         justify-content: center;
+         align-items: center; 
+         
+   }
+
+   .text__read img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+    }
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+
+
+
+
+@media screen and (max-width: 769px) and (min-width: 322px){
+
+        body {
+        width: 769px;
+        height: 504px ;
+        margin: 0px;
+        font-family: "TTLakes", system-ui, sans-serif;
+        overflow-x: hidden; /* отключает горизонтальный скролл */
+        overflow-y: scroll; /* включает вертикальный скролл */
+        
+    }
+  
+    .header {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 769px; 
+         height: 88px; 
+         background-color: #ffffff;
+         
+    }
+
+    .header__block_left {
+        margin-left: 24px;
+    }
+
+    .header__block_right {
+        margin-right: 24px;
+    }
+
+    .header__block {
+         display: flex;
+         justify-content: ;
+         align-items: center;
+         width: auto; 
+         height: 88px; 
+         background-color: #ffffff;
+         gap:17px;
+    }
+
+    main {
+        width: 769px;
+        height: 504px;
+        background-color: #F8F8F8;
+    }
+
+    header img {
+         max-width: 100%;
+         max-height: 100%;
+         height: auto;
+    }
+
+/*------------------------------------------------------------------*/
+
+
+
+
+
+.header__icon {
+         display: flex;
+         justify-content: center;
+         align-items: center; 
+         width: 40px;
+         height: 40px; 
+         background-color: #FF3E79;
+         border-radius: 20px;
+         border: none;
+        padding: 0;
+    }
+
+    .header__icon_burger_menu {
+         display: flex;
+    }
+
+    .header__icon_remont {
+         display: flex;
+    }
+
+    .header__icon_search {
+         display: flex;
+    }
+
+    .header__icon_phone {
+         display: flex;
+    }
+
+    .header__icon_messege {
+         display: flex;
+    }
+
+    .header__icon_persone {
+         display: flex;
+    }
+
+    .header__line_type_first {
+         display: flex;
+    }
+
+    .header__line_type_second {
+        display: flex;
+    }
+
+    .header__logo {
+        width: 96px;
+        height: 50px;
+    }
+
+/*------------------------------------------------------------------*/
+    .title {
+         display: flex;
+         align-items: center;
+    }
+
+    .title p {
+        font-family: "TTLakes", sans-serif;
+        font-weight: Bold;
+        font-size: 28px;
+    }
+
+    .title__text {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .title__icon {
+        display: none;
+    }
+
+    .title__icon__remont {
+
+    }
+
+    .title__icon__search {
+
+    }
+
+
+
+/*------------------------------------------------------------------*/
+    .scroll{
+        display: flex;
+         width: 769px;
+         height: 40px; 
+                  /* видимая ширина строки */
+         overflow-x: auto;      /* горизонтальный скролл при переполнении */
+         overflow-y: hidden;    /* вертикальный не нужен */
+         white-space: nowrap;   /* не переносить текст */
+         scrollbar-width: none;   
+        background-color: #EAEAEA;
+         
+    }
+    
+    .scroll__button {
+         width: auto; 
+         height:40px; 
+         font-family: "TTLakes", sans-serif;
+         font-weight: 500;
+         font-size: 16px;
+         color: #7e7e82;
+         padding-left: 5%;
+         padding-right: 5%;
+    }
+    .scroll__button__active {
+         border: 2px solid #b8ffec; 
+         border-radius: 6px;
+         margin-left: 24px;
+    }
+
+    .scroll__button__passive {
+        border: 0px;
+        border-radius: 6px;
+        background-color: #F8F8F8;
+    }
+
+    .scroll__button__brend {
+        display: none;
+    }
+    .scroll__button__active__device{
+        display:block;
+    }
+
+    .scroll__button__passive__device{
+        display: none;
+    }
+
+    .scroll__button__service{
+        display: block;
+    }
+    .scroll__button__address{
+        display: block;
+        
+    }
+    .scroll__button__price{
+        display: none;
+    }
+    .scroll__button__device{
+        
+    }
+/*------------------------------------------------------------------*/
+    
+    .second_block {
+         display: flex;
+         width: 720px;
+         height: 208px;
+         margin-top: 32px;
+         margin-left: 25px;
+         margin-right: 25px;
+         margin-bottom: 40px;
+        
+    }
+    .second_block p {
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+    }
+
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        width: 312px;
+        height: 208px;
+    }
+
+    .text__picture {
+        display: flex;
+        width: 360px;
+        height: 208px;
+    }
+        /* Внести изменения в название класса или убрать у всего блока */
+   
+    .text__dlc__m {
+        display:block;
+    }
+
+    .text__dlc__l {
+        display:none;
+    }
+
+/*------------------------------------------------------------------*/
+
+   .text__read {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 137px;
+    height: 24px;
+    gap: 8px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-top: 10px;
+   }
+
+   .text__read p {
+    font-size: 16px;
+    font-family: "TTLakes", sans-serif;
+    font-weight: Bold;
+
+   }
+
+   .text__read_icon {
+        display: flex;
+         width: 24px;
+         height: 24px;
+         justify-content: center;
+         align-items: center; 
+         
+         
+   }
+
+   .text__read img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+    }
+
+
+
+/* изменить названия */
+
+
+}
+
+@media screen and (min-width: 1121px)  {
+        body {
+        width: 1121px;
+        height: 535px ;
+        margin: 0px;
+        font-family: "TTLakes", system-ui, sans-serif;
+        overflow-x: hidden; /* отключает горизонтальный скролл */
+        overflow-y: scroll; /* включает вертикальный скролл */
+        
+    }
+  
+    .header {
+         display: none;
+         justify-content: space-between;
+         align-items: center;
+         width: 769px; 
+         height: 88px; 
+         background-color: #ffffff;
+         
+    }
+
+    .header__block_left {
+        margin-left: 24px;
+    }
+
+    .header__block_right {
+        margin-right: 24px;
+    }
+
+    .header__block {
+         display: flex;
+         justify-content: ;
+         align-items: center;
+         width: auto; 
+         height: 88px; 
+         background-color: #ffffff;
+         gap:17px;
+    }
+
+    main {
+        width: 1121px;
+        height: 535px;
+        background-color: #F8F8F8;
+    }
+
+    header img {
+         max-width: 100%;
+         max-height: 100%;
+         height: auto;
+    }
+
+/*------------------------------------------------------------------*/
+
+
+
+
+
+.header__icon {
+         display: flex;
+         justify-content: center;
+         align-items: center; 
+         width: 40px;
+         height: 40px; 
+         background-color: #FF3E79;
+         border-radius: 20px;
+         border: none;
+        padding: 0;
+    }
+
+    .header__icon_burger_menu {
+         display: flex;
+         background-color: #FF3E79;
+    }
+
+    .header__icon_remont {
+         display: flex;
+    }
+
+    .header__icon_search {
+         display: flex;
+    }
+
+    .header__icon_phone {
+         display: flex;
+    }
+
+    .header__icon_messege {
+         display: flex;
+    }
+
+    .header__icon_persone {
+         display: flex;
+    }
+
+    .header__line_type_first {
+         display: flex;
+    }
+
+    .header__line_type_second {
+        display: flex;
+    }
+
+    .header__logo {
+        width: 96px;
+        height: 50px;
+    }
+
+/*------------------------------------------------------------------*/
+    .title {
+         display: flex;
+         align-items: center;
+         justify-content: space-between; 
+         padding-top: 42px;
+        
+         
+    }
+
+    .title__text p {
+        font-family: "TTLakes", sans-serif;
+        font-weight: Bold;
+        font-size: 28px;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+    }
+
+    .title__text {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .title__icon {
+        display: flex;
+        font-size: 16px;
+        padding-right: 32px;
+        
+    }
+
+    .title__icon__remont {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding-right: 20px;
+    }
+
+    .title__icon__search {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+
+
+
+/*------------------------------------------------------------------*/
+    .scroll{
+        display: flex;
+         width: auto; 
+         height: auto; 
+                  /* видимая ширина строки */
+         overflow-x: hidden;      /* горизонтальный скролл при переполнении */
+         overflow-y: hidden;    /* вертикальный не нужен */
+         flex-wrap: wrap;
+         scrollbar-width: none;   
+         padding-left: 33px;
+         
+    }
+    
+    .scroll__button {
+         width: auto; 
+         height:40px; 
+         font-family: "TTLakes", sans-serif;
+         font-weight: 500;
+         font-size: 16px;
+         color: #7e7e82;
+         overflow: hidden; 
+         padding-left: 1.5%;
+         padding-right: 1.5%;
+    }
+    .scroll__button__active {
+         border: 2px solid #b8ffec; 
+         border-radius: 6px;
+    }
+
+    .scroll__button__passive {
+        border: 0px;
+        border-radius: 6px;
+        background-color: #F8F8F8;
+    }
+
+    .scroll__button__brend {
+        display: block;
+    }
+    .scroll__button__active__device{
+        display:none;
+    }
+
+    .scroll__button__passive__device{
+        display: block;
+    }
+
+    .scroll__button__service{
+        display: none;
+    }
+    .scroll__button__address{
+        display: block;
+        
+    }
+    .scroll__button__price{
+        display: ;
+        
+    }
+/*------------------------------------------------------------------*/
+    
+    .second_block {
+         display: flex;
+         justify-content: space-between;
+         width: 100%;
+         height: auto;
+         padding-top: 7px;
+        
+    }
+    .second_block p {
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+    }
+
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        width: 490px;
+        height: 208px;
+        padding-left: 32px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    .text__picture {
+        display: flex;
+        width: 531px;
+        height: 307px;
+        padding-right: 30px;     
+    }
+
+    .text__picture img {
+        width:100%;
+        height: 100%;
+        border-radius: 6px;
+    }
+        /* Внести изменения в название класса или убрать у всего блока */
+   
+
+/*------------------------------------------------------------------*/
+
+   .text__read {
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+    height: 24px;
+    gap: 8px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-top: 10px;
+   }
+
+   .text__read p {
+    font-size: 16px;
+    font-family: "TTLakes", sans-serif;
+    font-weight: Bold;
+
+   }
+
+   .text__read_icon {
+        display: flex;
+         width: 24px;
+         height: 24px;
+         justify-content: center;
+         align-items: center; 
+         
+         
+   }
+
+   .text__read img {
+        height: auto;
+    }
+
+
+
+/* изменить названия */
+
+
+}
