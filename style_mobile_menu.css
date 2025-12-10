@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "TTLakes";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/TTLakes-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TTLakes";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/TTLakes-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TTLakes";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/TTLakes-Bold.woff") format("woff");
+}
+
+
+body {
+    width: 768px;
+    height: 1024px;
+    margin: 0;
+    font-family: "TTLakes", system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1b1c21;
+}
+.mobile__menu {
+    display: grid;
+    grid-template-rows: 100px 1fr 250px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "bar"
+        "categories"
+        "footer"
+        ;
+    width: 320px; 
+    height: 1024px; 
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    background: #fff;
+}
+
+.mobile__menu__bar {
+    grid-area: bar;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.bar__block_left {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.mobile__menu__categories {
+    grid-area: categories;
+    display: flex; 
+    flex-direction: column;
+}
+
+.categories__service {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+
+}
+
+.categories__service:hover {
+  opacity: 0.6;
+}
+
+.categories__service__main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    opacity: 0.6;
+
+}
+
+
+
+.mobile__menu__footer {
+    grid-area: footer;
+    padding-left: 24px ;
+}
+
+.mobile__menu__footer_icon_bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mobile__menu__footer_lang_bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang__selected  {
+    opacity: 0.6;
+}
+
+.mail {
+    font-size: 16px;
+}
+
+.mobile__number {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+
+.header__icon {
+         display: flex;
+         justify-content: center;
+         align-items: center; 
+         width: 40px;
+         height: 40px; 
+         background-color: #FF3E79;
+         border-radius: 20px;
+         border: none;
+        padding: 0;
+    }
+    

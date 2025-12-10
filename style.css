@@ -873,7 +873,7 @@
    }
 
    .text__read_icon {
-        display: flex;
+         display: flex;
          width: 24px;
          height: 24px;
          justify-content: center;
