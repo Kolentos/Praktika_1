@@ -107,10 +107,12 @@ body {
 
 .lang__selected  {
     opacity: 0.6;
+    font-weight: 500;
 }
 
 .mail {
     font-size: 16px;
+    font-weight: 500;
 }
 
 .mobile__number {
@@ -131,4 +133,5 @@ body {
          border: none;
         padding: 0;
     }
+
     
