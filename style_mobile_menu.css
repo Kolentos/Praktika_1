@@ -105,6 +105,10 @@ body {
     gap: 10px;
 }
 
+.lang {
+  font-weight: 500;
+}
+
 .lang__selected  {
     opacity: 0.6;
     font-weight: 500;
@@ -135,3 +139,4 @@ body {
     }
 
     
+
