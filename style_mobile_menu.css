@@ -107,11 +107,13 @@ body {
 
 .lang {
   font-weight: 500;
+  line-height: 150%;
 }
 
 .lang__selected  {
     opacity: 0.6;
     font-weight: 500;
+    line-height: 150%;
 }
 
 .mail {
@@ -139,4 +141,5 @@ body {
     }
 
     
+
 
