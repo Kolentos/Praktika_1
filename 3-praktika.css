@@ -90,12 +90,12 @@
     .swiper-pagination .swiper-pagination-bullet{
       width: 12px;
       height: 12px;
-      background: url('./Icons/bullet_pagination.svg') center/contain no-repeat;
+      background: url("./Icons/bullet_pagination.svg") center/contain no-repeat;
     }
     .swiper-pagination .swiper-pagination-bullet-active{
       width: 12px;
       height: 12px;
-      background: url('./Icons/active_bullet_pagination.svg') center/contain no-repeat;
+      background: url("./Icons/active_bullet_pagination.svg") center/contain no-repeat;
     }
 
     .show_all {
@@ -312,4 +312,5 @@
       height: 11px;
     }
 }
+
 
