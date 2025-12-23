@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    if (window.innerWidth > 321) {
+    if (window.matchMedia("(orientation: landscape)").matches) {
         console.log('Ширина > 321, выходим, Swiper не запускаем');
     // экран шире 768px — слайдер не нужен, просто выходим
     return;
@@ -41,5 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
     showAllText.textContent = isOpening ? 'Скрыть' : 'Показать все';
   });
 }); // вот это нормально, но тогда сверху должна быть открывающая скобка
+
 
 
