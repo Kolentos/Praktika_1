@@ -19,7 +19,7 @@
   src: url("./Fonts/TTLakes-Bold.woff") format("woff");
 }
 
-@media screen and (orientation: portrait){
+@media screen and (orientation: portrait) and (max-width: 440px){
 
     body {
         width: auto; 
@@ -102,7 +102,7 @@
       display: none;
     }
 }
-@media screen and (min-width: 321px) and (max-width: 768px){
+@media screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape){
 
     body {
         width: 768px; 
@@ -312,6 +312,7 @@
       height: 11px;
     }
 }
+
 
 
 
